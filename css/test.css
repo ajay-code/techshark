@@ -1,0 +1,159 @@
+.menu  li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	border: red;
+}
+/* Links */
+.menu li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+	color: #555;
+	text-shadow: 0px 0px -1px rgba(0, 0, 0, 0.08);
+	border: blue;
+}
+.menu li:hover > a {
+	color:#00bbff;
+}
+/* Sub Menu */
+.menu ul {
+	z-index:999;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	opacity: 0;
+	background: #333;
+	border-radius: 0 0 5px 5px;
+	transition: opacity .25s ease .1s;
+}
+.menu li:hover > ul {
+	 opacity: 1;
+}
+.menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	transition: height .25s ease .1s;
+}
+.menu li:hover > ul li {
+	height: auto;
+	overflow: visible;
+	padding: 0;
+	margin-top: 2px;
+	font-weight: normal;
+}
+.menu li ul li :hover > ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+	font-weight: normal;
+	position: absolute;
+}
+
+.menu ul li a {
+	width: 200px;
+	padding: 4px 0 4px 40px;
+	margin: 0;
+	color:#fff;
+	border: none;
+	border-bottom: 1px solid rgb(74, 76, 77);
+}
+.menu ul li:last-child a { border: none; }
+
+
+
+
+
+
+
+
+
+<========================================================>
+
+
+
+
+
+
+
+/* Menu */
+ul#menu {	
+	float:left;
+}
+
+ul#menu {
+	margin-top: 8px;
+}
+
+ul#menu li {	
+	width: 125px;
+	text-align: center;
+	position: relative;
+	float:left;
+	margin-right: 0px;
+}
+
+ul#menu a{
+	display: block;
+	height: 35px;
+	line-height: 25px;
+	color: #555;
+
+}
+
+ul#menu > li li{
+	width: 250px;
+}
+
+ul#menu > li  ul a{
+	color: white;
+	background: #333;
+	border-bottom: 1px solid rgb(74, 76, 77);
+
+
+	}
+
+ul#menu .sub1 a{
+
+}	
+
+ul#menu .sub2 a{
+	margin-left: 15px;
+}	
+
+ul#menu ul.sub {
+	display: none;
+	position: absolute;
+	top: 36px;
+	left: 0px;
+}
+
+ul#menu ul.sub > li > ul {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 250px;
+}
+
+ul#menu li:hover .sub{
+	display: block;
+}
+
+ul#menu ul.sub > li.l1:hover > .sub1{
+	display: block;
+}
+
+ul#menu li:hover > a{
+	color: #00bbff;
+}
+
+.menu ul li:last-child a { border-radius: 0 0 5px 5px; }
+
+
+
